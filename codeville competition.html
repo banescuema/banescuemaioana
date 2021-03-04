@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+<title>
+    Globe Travel
+</title>
+<style>
+.fundal{
+        background: linear-gradient(to right bottom, rgb(22, 33, 180), white );     
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        margin:0;
+}
+.meniu{
+        background-image:url('mare.jpg');
+        width:250vh;
+        height:20vh;
+        position:fixed;
+        top:0;
+    }
+.banner2{
+        background-image:url("baner1.png");
+        width:51%;
+        height:20vh;
+        position:fixed;
+        margin-left:24%;
+        top:0;
+
+
+    }
+.banner2 .titlu{
+    margin-top:-0.3%;
+    color:rgb(9, 9, 104);
+    font-size:600%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align:center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgb(138, 0, 0);
+    text-align:center;
+    background: linear-gradient(to right, rgb(2, 0, 128) 10%, rgb(136, 10, 10) 50%, rgb(233, 118, 11) 90%);
+    background-size:200%;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation:titanim 7s ease infinite;
+}
+@keyframes titanim{
+        to{
+            background-position: 200% center;
+        }
+    }
+.banner2 .logo{
+    margin-left:110%;
+    margin-top:-18.5%;
+    width:25vh;
+    height:24vh;
+    background-color:white;
+    border-radius:50%;
+
+}
+.para1{
+    margin-top:30%;
+    font-size:160%;
+    width:10%;
+}
+          .container1{
+                display:flex;
+                flex-wrap:wrap;
+                margin-top:15%;
+                margin-left:17%;
+            }
+        
+            .container1 .card{
+                position:relative;
+                max-width:44.6vh;
+                height:35vh;;
+                background:rgb(255, 207, 207);
+                margin: 30px 20px;
+                display:flex;
+                flex-direction:column;
+                box-sizing: 0 1px 202px rgba(0,0,0,0.5);
+                transition: 0.3s ease-in-out;
+            }
+            .container1 .card:hover{
+                height: 105vh;
+            }
+            .container1 .card .imaginebuna{
+                position:relative;
+                width:37.6vh;
+                height:30vh;
+                top:-5vh;
+                left: 3.4vh;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            }
+            .container1 .card .imaginebuna img{
+                width:100%;
+                height:33vh;
+                border-radius: 1vh;
+            }
+ 
+            .container1 .card .content1{
+                position:relative;
+                margin-top: -20vh;
+                text-align:center;
+                color:#111;
+                visibility:hidden;
+                opacity:0;
+                font-size:110%;
+                transition: 0.3s ease-in-out;
+            }
+            .container1 .card:hover .content1{
+                visibility:visible;
+                opacity:1;
+                margin-top:1%;
+                transition-delay: 0.3s;
+            }
+            .container1 .card .text{
+                text-align:justify;
+                padding:0px 2vh;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+            }
+</style>
+<style>
+    .slogan{
+        margin-top:13%;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size:400%;
+        font-family:sans-serif;
+        margin-left:23%;
+        color: #000000;
+        text-shadow: -0.2vh -0.2vh 0 rgb(177, 198, 255), -0.4vh -0.4vh 0 rgb(247, 80, 2);
+    }
+    .parag1{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size:330%;
+        font-family:sans-serif;
+        width:30%;
+        margin-top:7%;
+        margin-left:8%;
+        color:rgb(2, 117, 41);
+        text-align:center;
+        background-color:rgba(255, 236, 211, 0.842);
+    }
+    .parag2{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size:220%;
+        font-family:sans-serif;
+        width:40%;
+        margin-top:-26%;
+        color:rgb(0, 29, 71);
+        margin-left:55%;
+        text-align:justify;
+        background-color:rgba(232, 255, 254, 0.808);
+    }
+    .grecia{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size:350%;
+        font-family:sans-serif;
+        color:darkblue;
+        margin-top:11%;
+        background-color: rgb(255, 248, 219);
+        border-radius:5%;
+        margin-left:7%;
+        width:50%;
+        height:25vh;
+    }
+    .grecia1{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size:180%;
+        font-family:sans-serif;
+        color:rgb(29, 29, 29);
+        margin-left:7%;
+    }
+    .begining{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size:180%;
+        font-family:sans-serif;
+        color:rgb(5, 5, 5);
+        margin-left:5%;
+        width:50%;
+        text-align:justify;
+        padding:5px 1vh;
+        margin-top:15%;
+        margin-left:7%;
+        font-weight: bold;
+    }
+   .vacanta{
+       margin-left:8%;
+       width:30%;
+   }
+   .pret{
+       font-size:200%;
+   }
+
+                #slideshow{
+                   width:350px;
+                   height:300px;
+                   overflow:hidden;
+                   margin-left:67%;
+                   margin-top:-25%;
+                   border: 5px double pink;
+                   border-image: -webkit-linear-gradient(45deg, rgb(189, 3, 3),rgb(255, 255, 255),rgb(30, 117, 248), rgb(189, 3, 3)) 20 stretch;
+                }
+                .ariaslideului{
+                   width:1750px;
+                   animation:slide 20s ease infinite;
+                }
+                .imagini{
+                   width:350px;
+                   height:300px;
+                }
+                .slide{
+                    float:left;
+                    width:350px;
+                    height:300px;
+                }
+                @keyframes slide{
+                    10%{margin-left:0px}
+                    20%{margin-left:-350px}
+                    30%{margin-left:-350px}
+                    40%{margin-left:-700px}
+                    50%{margin-left:-700px}
+                    60%{margin-left:-1050px}
+                    70%{margin-left:-1050px}
+                    80%{margin-left:-1400px}
+                    90%{margin-left:-1400px}
+                }
+.contact{
+    background-color:rgb(51, 51, 51);
+    margin-top:20%;
+    width:102%;
+    height:40vh;
+}
+.content2{
+    color:white;
+    text-align:center;
+    font-size:130%;
+}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body class="fundal">
+    <p class="slogan">Oferte pentru vacanțe perfecte</p>
+    <p class="parag1">Alege destinații de top din Europa</p>
+    <img class="vacanta" src="poza.png">
+    <p class="parag2">Vrei să petreci vacanțe de neuitat în destinațiile tale preferate din Europa? Noi iți putem oferi pachete de vacanță, cu bilete de avion incluse, la prețuri convenabile! </p>
+    <p class="begining">Agenția Globe Travel vă stă la dispoziție cu o echipă unită și entuziastă, calificată în domeniul turistic de peste 5 ani. Avem experiență, pasiune și credem cu tărie că plăcerea de a călători este una dintre cele mai frumoase bucurii ale vieții – întodeauna călătoriile ne vor extinde orizonturile și ne vor umple de uimire și emoții noi.
+Ofertele agenției noastre se adresează oricărui turist, dar se pliază pe nevoia fiecărui client în parte.</p>
+    <div id="slideshow">
+        <div class="ariaslideului">
+        <div class="slide"><img class="imagini" src="dest1.jpeg"></div>
+        <div class="slide"><img class="imagini" id="imgn" src="dest2.jpg"></div>
+        <div class="slide"><img class="imagini" id="imgn" src="dest3.jpg"></div>
+        <div class="slide"><img class="imagini" src="dest4.jpg"></div>
+        <div class="slide"><img class="imagini" src="dest5.jpg"></div>
+      </div>
+    </div>
+
+    <p class="grecia">Oferte speciale - Grecia, perioada 15 iulie- 15 august</p>
+    <p class="grecia1">Contactează-ne imediat și la vară concediul e asigurat!</p>
+
+
+ <div class="row">
+    <div class="col-sm-4">
+        <div class="container1">
+            <div class="card">
+                <div class="imaginebuna">
+                  <img src="atena.jpg">
+                </div>
+                <div class="content1">
+                    <h1 class="titlu">ATENA</h1>
+                    <p class="pret">400 euro- 6 nopti</p><p class="text">Atena este o destinație ideală pentru iubitorii de istorie, nu numai în sezonul estival. Dimpotrivă, capitala Greciei e locul perfect în extrasezon, din toamnă până în primăvară, atunci când strălucirea soarelui mediteranean se domolește, iar clima blândă le permite turiștilor să viziteze monumente din Acropolă sau din Agora si să se plimbe pe străduțele întortocheate din cartierele Plaka și Monastiraki.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="container1">
+            <div class="card">
+                <div class="imaginebuna">
+                    <img src="kefa.jpg">
+                </div>
+                    <div class="content1">
+                        <h1 class="titlu">KEFALONIA</h1>
+                        <p class="pret">260 euro- 3 nopti</p><p class="text">Insula Kefalonia are o suprafaţă puţin peste 900 kilometri pătraţi, numărul locuitorilor rezidenţi fiind de 45,000 de persoane. În secolul al XIX-lea insula s-a aflat sub protectorat britanic, reminescenţele istorice fiind vizibile de-a lungul capitalei, Argostoli. Munţii Palki şi Ainos domină insula, în zona muntelui Ainos găsindu-se şi Parcul Naţional în care creşte “Abies cephalonica”, o specie unică de conifer.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="container1">
+            <div class="card">
+                <div class="imaginebuna">
+                  <img src="santorini.jfif">
+                </div>
+                <div class="content1">
+                    <h1 class="titlu">SANTORINI</h1>
+                    <p class="pret">380 euro -5 nopti</p><p class="text">Santorini sau insula cretana a indragostitilor, este cea mai frumoasa si spectaculoasa insula a Greciei. Primeste anual un numar de turisti de 2 sau 3 ori mai mare decat numarul locuitorilor insulei. Desprinsa in timp dintr-un vulcan ea ofera turistilor munte si mare, alb si albastru, biserici ortodoxe dar si traditii.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+<div class="contact">
+    <div class="content2">
+    <p class="cont1">Date de contact</p>
+     <p class="telefon">Nr.telefon:0731224650</p>
+     <p class="gmail">Adresa gmail: global_travel@gmail.com</p>
+     <p class="sediu">Sediul agenției - București, sector 2, strada Poeziei, nr.10</p>
+</div>
+</div>
+
+<div class="meniu">
+    <div class="banner2">
+             <h1 class="titlu">Globe Travel</h1>
+             <img class="logo" src="globe.png">
+        </div>
+        </div>
+
+</body>
+</html>
