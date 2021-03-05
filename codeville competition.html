@@ -17,6 +17,7 @@
         background-repeat:no-repeat;
         background-attachment:fixed;
         margin:0;
+        overflow-x:hidden;
 }
 .meniu{
         background-image:url('mare.jpg');
@@ -243,6 +244,22 @@
     font-size:130%;
 }
 </style>
+<style>
+    ::-webkit-scrollbar{
+        width:4vh;
+    }
+    ::-webkit-scrollbar-track {
+        box-shadow:inset 0 0 10px rgb(58, 0, 165);
+        border-radius:10px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color:rgb(138, 5, 5);
+        border-radius:10px;
+        border-width:4px;
+        border-style:dotted;
+        border-color: rgb(255, 255, 255);
+    }
+    </style>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
